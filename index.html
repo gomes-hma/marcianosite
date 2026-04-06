@@ -1,303 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SITE JS</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.js"></script>
 </head>
-<script src="bootstrap-5.3.8-dist/js/bootstrap.js"></script>
-<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
 
 <body>
-<div class="container text-center">
+    <div class="container mt-5 text-center">
 
-<div class="row">
+        <div class="row justify-content-center g-4">
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Par ou Impar</h5>
-<a href="#" class="btn btn-primary" onclick="
-let numero1 = Number(prompt('Digite um número:'));
-if (numero1 % 2 === 0) {
-  alert('O número é par.');
-} else {
-  alert('O número é ímpar.');
-}
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Par ou Impar</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let numero1 = Number(prompt('Digite um número:'));
+                            if (numero1 % 2 === 0) {
+                                alert('O número é par.');
+                            } else {
+                                alert('O número é ímpar.');
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Maioridade</h5>
-<a href="#" class="btn btn-primary" onclick="
-let idade = Number(prompt('Digite sua idade:'));
-if (idade >= 18) {
-  alert('Você é maior de idade.');
-} else {
-  alert('Você é menor de idade.');
-}
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Maioridade</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let idade = Number(prompt('Digite sua idade:'));
+                            if (idade >= 18) {
+                                alert('Você é maior de idade.');
+                            } else {
+                                alert('Você é menor de idade.');
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Contar até 10</h5>
-<a href="#" class="btn btn-primary" onclick="
-for (let i = 1; i <= 10; i++) {
-  alert(i);
-}
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Contar até 10</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            for (let i = 1; i <= 10; i++) {
+                                alert(i);
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Contagem regressiva</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let numero2 = Number(prompt('Digite um número para a contagem regressiva:'));
+                            while (numero2 >= 0) {
+                                alert(numero2);
+                                numero2--;
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="row mt-3">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tabuada</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let numero3 = Number(prompt('Digite um número para ver a tabuada:'));
+                            for (let i = 1; i <= 10; i++) {
+                                alert(numero3 + ' x ' + i + ' = ' + (numero3 * i));
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Contagem regressiva</h5>
-<a href="#" class="btn btn-primary" onclick="
-let numero2 = Number(prompt('Digite um número para a contagem regressiva:'));
-while (numero2 >= 0) {
-  alert(numero2);
-  numero2--;
-}
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Somatório</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let numero4 = Number(prompt('Digite um número:'));
+                            let soma = 0;
+                            for (let i = 1; i <= numero4; i++) {
+                                soma += i;
+                            }
+                            alert('A soma de 1 até ' + numero4 + ' é ' + soma);
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Tabuada</h5>
-<a href="#" class="btn btn-primary" onclick="
-let numero3 = Number(prompt('Digite um número para ver a tabuada:'));
-for (let i = 1; i <= 10; i++) {
-  alert(numero3 + ' x ' + i + ' = ' + (numero3 * i));
-}
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Número Primo</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let numero5 = Number(prompt('Digite um número:'));
+                            let primo = true;
+                            if (numero5 <= 1) {
+                                primo = false;
+                            } else {
+                                for (let i = 2; i < numero5; i++) {
+                                    if (numero5 % i === 0) {
+                                        primo = false;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (primo) {
+                                alert('O número é primo.');
+                            } else {
+                                alert('O número não é primo.');
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Somatório</h5>
-<a href="#" class="btn btn-primary" onclick="
-let numero4 = Number(prompt('Digite um número:'));
-let soma = 0;
-for (let i = 1; i <= numero4; i++) {
-  soma += i;
-}
-alert('A soma de 1 até ' + numero4 + ' é ' + soma);
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Login</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let usuarioCorreto = 'admin';
+                            let senhaCorreta = '1234';
+                            let usuario = prompt('Digite o usuário:');
+                            let senha = prompt('Digite a senha:');
+                            while (usuario !== usuarioCorreto || senha !== senhaCorreta) {
+                                alert('Usuário ou senha incorretos.');
+                                usuario = prompt('Digite o usuário:');
+                                senha = prompt('Digite a senha:');
+                            }
+                            alert('Login realizado com sucesso!');
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Somar positivos</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let total = 0;
+                            let numero6 = Number(prompt('Digite um número positivo (negativo para parar):'));
+                            while (numero6 >= 0) {
+                                total += numero6;
+                                numero6 = Number(prompt('Digite outro número:'));
+                            }
+                            alert('A soma total é ' + total);
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="row mt-3">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Adivinhação</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let secreto = Math.floor(Math.random() * 10) + 1;
+                            let palpite = Number(prompt('Adivinhe de 1 a 10:'));
+                            while (palpite !== secreto) {
+                                if (palpite < secreto) {
+                                    alert('Maior');
+                                } else {
+                                    alert('Menor');
+                                }
+                                palpite = Number(prompt('Tente novamente:'));
+                            }
+                            alert('Acertou!');
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Número Primo</h5>
-<a href="#" class="btn btn-primary" onclick="
-let numero5 = Number(prompt('Digite um número:'));
-let primo = true;
-if (numero5 <= 1) {
-  primo = false;
-} else {
-  for (let i = 2; i < numero5; i++) {
-    if (numero5 % i === 0) {
-      primo = false;
-      break;
-    }
-  }
-}
-if (primo) {
-  alert('O número é primo.');
-} else {
-  alert('O número não é primo.');
-}
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Fatorial</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let numero7 = Number(prompt('Digite um número:'));
+                            let fatorial = 1;
+                            for (let i = 1; i <= numero7; i++) {
+                                fatorial *= i;
+                            }
+                            alert('Resultado: ' + fatorial);
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Login</h5>
-<a href="#" class="btn btn-primary" onclick="
-let usuarioCorreto = 'admin';
-let senhaCorreta = '1234';
-let usuario = prompt('Digite o usuário:');
-let senha = prompt('Digite a senha:');
-while (usuario !== usuarioCorreto || senha !== senhaCorreta) {
-  alert('Usuário ou senha incorretos.');
-  usuario = prompt('Digite o usuário:');
-  senha = prompt('Digite a senha:');
-}
-alert('Login realizado com sucesso!');
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Validar Nota</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let nota = Number(prompt('Digite uma nota:'));
+                            while (nota < 0 || nota > 10) {
+                                nota = Number(prompt('Digite novamente:'));
+                            }
+                            alert('Nota válida: ' + nota);
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Somar positivos</h5>
-<a href="#" class="btn btn-primary" onclick="
-let total = 0;
-let numero6 = Number(prompt('Digite um número positivo (negativo para parar):'));
-while (numero6 >= 0) {
-  total += numero6;
-  numero6 = Number(prompt('Digite outro número:'));
-}
-alert('A soma total é ' + total);
-">Verificar</a>
-</div>
-</div>
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Média</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let nota1 = Number(prompt('Nota 1:'));
+                            let nota2 = Number(prompt('Nota 2:'));
+                            let nota3 = Number(prompt('Nota 3:'));
+                            let media = (nota1 + nota2 + nota3) / 3;
+                            alert('Média: ' + media);
+                            if (media >= 7) {
+                                alert('Aprovado');
+                            } else {
+                                alert('Reprovado');
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Caixa</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let valor = Number(prompt('Digite o valor:'));
+                            let ced100 = Math.floor(valor / 100);
+                            valor %= 100;
+                            let ced50 = Math.floor(valor / 50);
+                            valor %= 50;
+                            let ced20 = Math.floor(valor / 20);
+                            valor %= 20;
+                            let ced10 = Math.floor(valor / 10);
+                            valor %= 10;
+                            let ced5 = Math.floor(valor / 5);
+                            valor %= 5;
+                            let ced2 = Math.floor(valor / 2);
+                            valor %= 2;
+                            let ced1 = Math.floor(valor / 1);
+                            alert('100: ' + ced100 + '\\n50: ' + ced50 + '\\n20: ' + ced20 + '\\n10: ' + ced10 + '\\n5: ' + ced5 + '\\n2: ' + ced2 + '\\n1: ' + ced1);
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="row mt-3">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ímpares</h5>
+                        <a href="#" class="btn btn-primary" onclick="
+                            let numero8 = Number(prompt('Digite um número:'));
+                            for (let i = 1; i <= numero8; i++) {
+                                if (i % 2 !== 0) {
+                                    alert(i);
+                                }
+                            }
+                        ">Verificar</a>
+                    </div>
+                </div>
+            </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Adivinhação</h5>
-<a href="#" class="btn btn-primary" onclick="
-let secreto = Math.floor(Math.random() * 10) + 1;
-let palpite = Number(prompt('Adivinhe de 1 a 10:'));
-while (palpite !== secreto) {
-  if (palpite < secreto) {
-    alert('Maior');
-  } else {
-    alert('Menor');
-  }
-  palpite = Number(prompt('Tente novamente:'));
-}
-alert('Acertou!');
-">Verificar</a>
-</div>
-</div>
-</div>
+        </div>
 
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Fatorial</h5>
-<a href="#" class="btn btn-primary" onclick="
-let numero7 = Number(prompt('Digite um número:'));
-let fatorial = 1;
-for (let i = 1; i <= numero7; i++) {
-  fatorial *= i;
-}
-alert('Resultado: ' + fatorial);
-">Verificar</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Validar Nota</h5>
-<a href="#" class="btn btn-primary" onclick="
-let nota = Number(prompt('Digite uma nota:'));
-while (nota < 0 || nota > 10) {
-  nota = Number(prompt('Digite novamente:'));
-}
-alert('Nota válida: ' + nota);
-">Verificar</a>
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="row mt-3">
-
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Média</h5>
-<a href="#" class="btn btn-primary" onclick="
-let nota1 = Number(prompt('Nota 1:'));
-let nota2 = Number(prompt('Nota 2:'));
-let nota3 = Number(prompt('Nota 3:'));
-let media = (nota1 + nota2 + nota3) / 3;
-alert('Média: ' + media);
-if (media >= 7) {
-  alert('Aprovado');
-} else {
-  alert('Reprovado');
-}
-">Verificar</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Caixa</h5>
-<a href="#" class="btn btn-primary" onclick="
-let valor = Number(prompt('Digite o valor:'));
-let ced100 = Math.floor(valor / 100);
-valor %= 100;
-let ced50 = Math.floor(valor / 50);
-valor %= 50;
-let ced20 = Math.floor(valor / 20);
-valor %= 20;
-let ced10 = Math.floor(valor / 10);
-valor %= 10;
-let ced5 = Math.floor(valor / 5);
-valor %= 5;
-let ced2 = Math.floor(valor / 2);
-valor %= 2;
-let ced1 = Math.floor(valor / 1);
-alert('100: ' + ced100 + '\n50: ' + ced50 + '\n20: ' + ced20 + '\n10: ' + ced10 + '\n5: ' + ced5 + '\n2: ' + ced2 + '\n1: ' + ced1);
-">Verificar</a>
-</div>
-</div>
-</div>
-
-<div class="col">
-<div class="card" style="width: 18rem;">
-<div class="card-body">
-<h5 class="card-title">Ímpares</h5>
-<a href="#" class="btn btn-primary" onclick="
-let numero8 = Number(prompt('Digite um número:'));
-for (let i = 1; i <= numero8; i++) {
-  if (i % 2 !== 0) {
-    alert(i);
-  }
-}
-">Verificar</a>
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
+    </div>
 </body>
 </html>
